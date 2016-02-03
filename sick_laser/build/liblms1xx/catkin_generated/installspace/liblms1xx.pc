@@ -1,0 +1,8 @@
+prefix=/home/seekurjr/sick_laser/install
+
+Name: liblms1xx
+Description: Description of liblms1xx
+Version: 0.0.0
+Cflags: -I/home/seekurjr/sick_laser/install/include
+Libs: -L/home/seekurjr/sick_laser/install/lib -llms1xx
+Requires: roscpp sensor_msgs

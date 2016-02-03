@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/seekurjr/sick_laser/src/liblms1xx/src/LMS1xx.h
+string
+-
+stdint.h
+-
+
+/home/seekurjr/sick_laser/src/lms1xx/src/setConfig.cpp
+iostream
+-
+boost/lexical_cast.hpp
+-
+LMS1xx.h
+-
+
