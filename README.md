@@ -1,6 +1,6 @@
 # ROSARIA
 
-Type of settings and communication to use ROSARIA on mobile robots (Seekur Jr, Seekur Jr with manipulator, Pioneer 3-AT)
+Type of settings and communications to use ROSARIA on mobile robots (Seekur Jr, Seekur Jr with manipulator, Pioneer 3-AT)
 
 In our robot, we setup the communicate over Wifi (ssh coomunication). So, line number 257 is modified:
  
