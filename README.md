@@ -1,9 +1,12 @@
 # ROSARIA
 
-NOTE: In my robot, we setup wifi to communicate. so, line number 257 is modified:
+Type of settings and communication to use ROSARIA on mobile robots (Seekur Jr, Seekur Jr with manipulator, Pioneer 3-AT)
 
- n.param( "port", serial_port, std::string("/dev/ttyS0") );
+In our robot, we setup the communicate over Wifi (ssh coomunication). So, line number 257 is modified:
  
- But if someone use usb port in order to communicate, line number should be modified with:
+   n.param("port", serial_port, std::string("/dev/ttyS0"));
+
  
-  n.param( "port", serial_port, std::string("/dev/ttyS1") ); //Your USB port number "e.g, 1,2,3,4"
+But commands changes according to the type of communications. If anyone using USB mode communication, one must modified the line number 257 with:
+ 
+   n.param("port", serial_port, std::string("/dev/ttyS1"));  //Your USB port number "e.g, 1,2,3,4"
